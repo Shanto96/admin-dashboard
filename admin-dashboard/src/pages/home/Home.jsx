@@ -4,10 +4,11 @@ import Widget from "../../Components/widget/Widget";
 function Home() {
   return (
     <div className="home-container d-flex">
-      <Widget />
-      <Widget />
-      <Widget />
-      <Widget />
+      <Widget type="user" />
+      <Widget type="order" />
+
+      <Widget type="revenue" />
+      <Widget type="balance" />
     </div>
   );
 }
