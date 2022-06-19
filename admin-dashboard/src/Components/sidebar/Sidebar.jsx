@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./sidebar.scss";
 import Aside from "./Aside";
-import { RiArrowLeftSLine } from "react-icons/ri";
+import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 
 function Sidebar() {
   const [collapsed, setCollapsed] = useState(false);
@@ -12,8 +12,23 @@ function Sidebar() {
   return (
     <div className="sidebar-container">
       <Aside collapsed={collapsed} />
-      <div className="collapse-container"></div>
-      <RiArrowLeftSLine onClick={() => handleCollapsedChange(!collapsed)} />
+
+      {collapsed ? (
+        <div className="collapse-container right">
+          <RiArrowRightSLine
+            onClick={() => handleCollapsedChange(!collapsed)}
+            size={30}
+            className="right"
+          />
+        </div>
+      ) : (
+        <div className="collapse-container">
+          <RiArrowLeftSLine
+            onClick={() => handleCollapsedChange(!collapsed)}
+            size={30}
+          />
+        </div>
+      )}
     </div>
   );
 }

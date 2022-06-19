@@ -1,0 +1,21 @@
+.user-img{
+    height: 40px;
+    width: 40px;
+    border-radius:50%;
+    object-fit: contain;
+
+}
+.navbar-container{
+    justify-content: flex-end;
+    padding: 2.5px 0;
+    border-bottom: 1px solid #00000030;
+}
+.icon-wraper{
+    margin-right: 20px;
+}
+.single-icon{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 10px
+}

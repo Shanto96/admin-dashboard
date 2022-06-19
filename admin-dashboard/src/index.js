@@ -17,7 +17,7 @@ root.render(
       <div className="sidebar-container">
         <Sidebar />
       </div>
-      <div className="main-container">
+      <div className="main-container w-100">
         <Navbar />
         <Routes>
           <Route index element={<Home />} />
