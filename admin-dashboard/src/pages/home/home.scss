@@ -5,3 +5,10 @@
         color: #fff;
     }
 }
+.home-info-container{
+    gap: 20px;
+    padding: 20px;
+    .chart{
+        flex:4;
+    }
+}

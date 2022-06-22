@@ -13,6 +13,8 @@ $icon-size: 35px;
 .sidebar-container {
     height: 100vh;
     position: relative;
+    position: sticky;
+    top: 0px;
 }
  .collapse-container{
     position: absolute;
