@@ -1,0 +1,41 @@
+.form-container{
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 6px 9px 14px 4px rgba(0,0,0,0.3);
+    height: 60%;
+
+    border-radius: 5px;
+    .left{
+        flex: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .right{
+       flex:1;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       form{
+        display: flex;
+        flex-wrap: wrap;
+        .single-input{
+            width: 40%;
+            margin-bottom: 10px;
+            input{
+                display: block;
+                border: none;
+                width: 100%;
+                padding: 5px;
+                border-bottom: 1px solid lightgrey;
+                outline: none;
+            }
+            
+        }
+        justify-content: space-around;
+        align-items: center;
+
+       }
+    }
+}

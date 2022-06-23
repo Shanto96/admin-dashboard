@@ -19,8 +19,9 @@ const actionColumns = [
 ];
 function Datatable() {
   return (
-    <div>
-      <div style={{ height: 400, width: "100%" }}>
+    <div className="datatable-container">
+      <span className="title"> All users list</span>
+      <div style={{ height: 400 }}>
         <DataGrid
           rows={userRows}
           columns={userColumns.concat(actionColumns)}

@@ -16,10 +16,10 @@ function Home() {
       </div>
       <div className="d-flex home-info-container">
         <ProgressBar />
-        <Chart />
+        <Chart title="Monthly Business Analysis" />
       </div>
       <div className="table-container">
-        <HomeTable />
+        <HomeTable title="Latest Sales update" />
       </div>
     </>
   );

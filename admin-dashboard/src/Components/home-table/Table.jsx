@@ -59,10 +59,10 @@ const rows = [
   },
 ];
 
-function HomeTable() {
+function HomeTable({ title }) {
   return (
     <div className="table-container">
-      <span className="title">Latest Sales update</span>
+      <span className="title">{title}</span>
       <TableContainer component={Paper} className="table">
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>

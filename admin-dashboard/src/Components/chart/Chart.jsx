@@ -57,12 +57,12 @@ const data = [
     products: 380,
   },
 ];
-function Chart() {
+function Chart({ title }) {
   return (
     <>
       <div className="chart-container">
         <div className="title-container">
-          <span className="title">Monthly Analysis of business</span>
+          <span className="title">{title}</span>
         </div>
 
         <ResponsiveContainer width="100%" height="100%">

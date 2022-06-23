@@ -5,6 +5,7 @@ import Product from "./pages/product/Product";
 import User from "./pages/user/User";
 import List from "./pages/list/List";
 import Single from "./pages/single/Single";
+import New from "./pages/new/New";
 import Sidebar from "./Components/sidebar/Sidebar";
 import Navbar from "./Components/navbar/Navbar";
 import "./index.css";
@@ -22,9 +23,11 @@ root.render(
         <Routes>
           <Route index element={<Home />} />
           <Route path="products" element={<List />}></Route>
-          <Route path="product/:productID" element={<Single />}></Route>
+          <Route path="products/:productID" element={<Single />}></Route>
+          <Route path="products/new" element={<New />}></Route>
           <Route path="users" element={<List />}></Route>
-          <Route path="user/:userID" element={<Single />}></Route>
+          <Route path="users/:userID" element={<Single />}></Route>
+          <Route path="users/new" element={<New />}></Route>
         </Routes>
       </div>
     </div>
