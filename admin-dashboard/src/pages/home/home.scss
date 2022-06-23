@@ -4,10 +4,12 @@
     p{
         color: #fff;
     }
+    flex-wrap: wrap;
 }
 .home-info-container{
     gap: 20px;
     padding: 20px;
+    flex-wrap: wrap;
     .chart{
         flex:4;
     }

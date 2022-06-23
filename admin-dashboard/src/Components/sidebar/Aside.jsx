@@ -57,13 +57,31 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
             <MenuItem icon={<FaTachometerAlt />}>Dashboard</MenuItem>
           </Link>
           <SubMenu title="Users" icon={<FiUsers />}>
-            <MenuItem>Users List</MenuItem>
-            <MenuItem>Add New</MenuItem>
+            <>
+              <Link to="/users">
+                <MenuItem>Users List</MenuItem>
+              </Link>
+            </>
+            <>
+              <MenuItem>
+                <Link to="/users/new">Add New</Link>
+              </MenuItem>
+            </>
           </SubMenu>
 
           <SubMenu title="Products" icon={<AiOutlineShop />}>
-            <MenuItem>Products List</MenuItem>
-            <MenuItem>Add New</MenuItem>
+            <>
+              {" "}
+              <MenuItem>
+                {" "}
+                <Link to="/products">Products List </Link>
+              </MenuItem>
+            </>
+            <>
+              <MenuItem>
+                <Link to="/products/new">Add New </Link>
+              </MenuItem>
+            </>
           </SubMenu>
           <MenuItem icon={<GiTakeMyMoney />}> Orders</MenuItem>
           <MenuItem icon={<RiTruckLine />}> Delivery</MenuItem>

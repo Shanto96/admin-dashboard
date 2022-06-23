@@ -5,8 +5,14 @@
     padding: 20px;
     height: 400px;
     border-radius: 5px;
+    max-width: 70%;
+
+    
     .title{
         color: #858585;
         font-weight: bold;
+    }
+    .max{
+        max-width:100%;
     }
 }
