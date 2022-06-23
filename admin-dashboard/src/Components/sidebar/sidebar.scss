@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-$sidebar-bg-color: #47525d11;
+$sidebar-bg-color: #fff;
 $submenu-bg-color: rgba(255, 255, 255, 0.05);
 $submenu-bg-color-collapsed: rgba(#0c1e35, 0.95);
 $sidebar-color: #293266;
@@ -9,7 +9,19 @@ $icon-bg-color: rgba(255, 255, 255, 0.05);
 $icon-size: 35px;
 
 @import '~react-pro-sidebar/dist/scss/styles.scss';
-
+.black,.white{
+  background: #161616;
+  padding: 5px;
+  border-radius: 2px;
+  width: 5px;
+  height: 5px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+.white{
+  background: #fff
+  ;
+}
 .sidebar-container {
     height: 100vh;
     position: relative;
@@ -163,10 +175,11 @@ $icon-size: 35px;
           margin-left: 0;
           margin-right: 5px;
         }
+        
       }
     }
   }
-
+ 
   @media (max-width: 767.98px) {
     overflow-x: hidden;
     header {

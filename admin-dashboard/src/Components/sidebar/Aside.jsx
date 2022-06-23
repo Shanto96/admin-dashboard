@@ -1,4 +1,5 @@
 import React from "react";
+import "./sidebar.scss";
 import {
   ProSidebar,
   Menu,
@@ -16,6 +17,13 @@ import {
   FaRegLaughWink,
   FaHeart,
 } from "react-icons/fa";
+import { MdOutlineDashboard } from "react-icons/md";
+import { FiUsers, FiSettings, FiLogOut } from "react-icons/fi";
+import { AiOutlineShop } from "react-icons/ai";
+import { RiTruckLine, RiNotification4Line } from "react-icons/ri";
+import { ImStatsDots } from "react-icons/im";
+import { GiTakeMyMoney } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
   return (
@@ -39,78 +47,45 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
             whiteSpace: "nowrap",
           }}
         >
-          Admin
+          {collapsed ? <MdOutlineDashboard /> : "Admin"}
         </div>
       </SidebarHeader>
 
       <SidebarContent>
         <Menu iconShape="circle">
-          <MenuItem
-            icon={<FaTachometerAlt />}
-            suffix={<span className="badge red">new</span>}
-          >
-            Dashboard
-          </MenuItem>
-          <MenuItem icon={<FaGem />}> Components</MenuItem>
+          <Link to="/">
+            <MenuItem icon={<FaTachometerAlt />}>Dashboard</MenuItem>
+          </Link>
+          <SubMenu title="Users" icon={<FiUsers />}>
+            <MenuItem>Users List</MenuItem>
+            <MenuItem>Add New</MenuItem>
+          </SubMenu>
 
-          <SubMenu
-            suffix={<span className="badge yellow">3</span>}
-            title="With Suffix"
-            icon={<FaRegLaughWink />}
-          >
-            <MenuItem>submenu 1</MenuItem>
-            <MenuItem>submenu 2</MenuItem>
-            <MenuItem>submenu 3</MenuItem>
+          <SubMenu title="Products" icon={<AiOutlineShop />}>
+            <MenuItem>Products List</MenuItem>
+            <MenuItem>Add New</MenuItem>
           </SubMenu>
-          <SubMenu
-            prefix={<span className="badge gray">3</span>}
-            title="With prefix"
-            icon={<FaHeart />}
-          >
-            <MenuItem>submenu 1</MenuItem>
-            <MenuItem>submenu 2</MenuItem>
-            <MenuItem>submenu 3</MenuItem>
-          </SubMenu>
-          <SubMenu title="multilevel" icon={<FaList />}>
-            <MenuItem>submenu 1 </MenuItem>
-            <MenuItem>submenu 2 </MenuItem>
-            <SubMenu title={`$submenu 3`}>
-              <MenuItem>submenu 3.1 </MenuItem>
-              <MenuItem>submenu 3.2 </MenuItem>
-              <SubMenu title={`$submenu 3.3`}>
-                <MenuItem>submenu 3.3.1 </MenuItem>
-                <MenuItem>submenu 3.3.2 </MenuItem>
-                <MenuItem>submenu 3.3.3 </MenuItem>
-              </SubMenu>
-            </SubMenu>
-          </SubMenu>
+          <MenuItem icon={<GiTakeMyMoney />}> Orders</MenuItem>
+          <MenuItem icon={<RiTruckLine />}> Delivery</MenuItem>
+          <MenuItem icon={<ImStatsDots />}> Stats</MenuItem>
+          <MenuItem icon={<RiNotification4Line />}> Notifications</MenuItem>
+          <MenuItem icon={<FaGem />}> System Health</MenuItem>
+          <MenuItem icon={<FiSettings />}> Settings</MenuItem>
+          <MenuItem icon={<FiLogOut />}> Log out</MenuItem>
         </Menu>
       </SidebarContent>
 
       <SidebarFooter style={{ textAlign: "center" }}>
         <div
-          className="sidebar-btn-wrapper"
+          className="sidebar-btn-wrapper d-flex"
           style={{
             padding: "20px 24px",
+            gap: "5px",
+            justifyContent: "center",
           }}
         >
-          <a
-            href="https://github.com/azouaoui-med/react-pro-sidebar"
-            target="_blank"
-            className="sidebar-btn"
-            rel="noopener noreferrer"
-          >
-            <FaGithub />
-            <span
-              style={{
-                whiteSpace: "nowrap",
-                textOverflow: "ellipsis",
-                overflow: "hidden",
-              }}
-            >
-              "View Source"
-            </span>
-          </a>
+          <div className="black"></div>
+          <div className="white"></div>
         </div>
       </SidebarFooter>
     </ProSidebar>

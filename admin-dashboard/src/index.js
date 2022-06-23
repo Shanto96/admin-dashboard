@@ -5,7 +5,8 @@ import Product from "./pages/product/Product";
 import User from "./pages/user/User";
 import List from "./pages/list/List";
 import Single from "./pages/single/Single";
-import New from "./pages/new/New";
+import NewUser from "./pages/new/NewUser";
+import NewProduct from "./pages/new/NewProduct";
 import Sidebar from "./Components/sidebar/Sidebar";
 import Navbar from "./Components/navbar/Navbar";
 import "./index.css";
@@ -24,10 +25,10 @@ root.render(
           <Route index element={<Home />} />
           <Route path="products" element={<List />}></Route>
           <Route path="products/:productID" element={<Single />}></Route>
-          <Route path="products/new" element={<New />}></Route>
+          <Route path="products/new" element={<NewProduct />}></Route>
           <Route path="users" element={<List />}></Route>
           <Route path="users/:userID" element={<Single />}></Route>
-          <Route path="users/new" element={<New />}></Route>
+          <Route path="users/new" element={<NewUser />}></Route>
         </Routes>
       </div>
     </div>

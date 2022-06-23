@@ -38,8 +38,8 @@ let inputs = [
     placeholder: "",
   },
 ];
-function New() {
+function NewUser() {
   return <Form inputs={inputs} />;
 }
 
-export default New;
+export default NewUser;

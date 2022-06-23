@@ -1,3 +1,15 @@
+.form-title-container{
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 6px 9px 14px 4px rgba(0,0,0,0.3);
+border-radius: 5px;
+.title{
+    color: #858585;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+}
 .form-container{
     margin: 10px;
     padding: 20px;
@@ -11,6 +23,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        .image{
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            
+        }
     }
     .right{
        flex:1;
@@ -31,6 +49,23 @@
                 border-bottom: 1px solid lightgrey;
                 outline: none;
             }
+            .file{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+            .submit-btn{
+                color:rgb(0, 156, 83);
+                background:rgba(0, 156, 83, 0.219);
+                display: block;
+                padding: 5px;
+                text-align: center;
+                margin-top: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
             
         }
         justify-content: space-around;
