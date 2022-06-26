@@ -10,12 +10,13 @@ import NewProduct from "./pages/new/NewProduct";
 import Sidebar from "./Components/sidebar/Sidebar";
 import Navbar from "./Components/navbar/Navbar";
 import "./index.css";
+import "./styles/styles.scss";
 import App from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <div className="d-flex">
+    <div className="d-flex app-container">
       <div className="sidebar-container">
         <Sidebar />
       </div>

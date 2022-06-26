@@ -18,7 +18,7 @@ function Home() {
         <ProgressBar />
         <Chart title="Monthly Business Analysis" />
       </div>
-      <div className="table-container">
+      <div className="">
         <HomeTable title="Latest Sales update" />
       </div>
     </>

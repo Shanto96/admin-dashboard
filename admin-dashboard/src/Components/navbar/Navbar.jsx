@@ -1,11 +1,14 @@
 import React from "react";
 import { MdOutlineNotificationsNone, MdSettings } from "react-icons/md";
-import { BsEnvelope, BsGlobe2 } from "react-icons/bs";
+import { BsEnvelope, BsGlobe2, BsMoon } from "react-icons/bs";
 import "./navbar.scss";
 function Navbar() {
   return (
     <div className="d-flex navbar-container w-100">
       <div className="icon-wraper d-flex ">
+        <div className="single-icon">
+          <BsMoon size={18} />
+        </div>
         <div className="single-icon">
           <MdOutlineNotificationsNone size={24} />
         </div>{" "}

@@ -28,6 +28,7 @@ function Datatable() {
           pageSize={5}
           rowsPerPageOptions={[5]}
           checkboxSelection
+          className="tableCell"
         />
       </div>
     </div>

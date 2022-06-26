@@ -53,9 +53,11 @@ const Aside = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
 
       <SidebarContent>
         <Menu iconShape="circle">
-          <Link to="/">
-            <MenuItem icon={<FaTachometerAlt />}>Dashboard</MenuItem>
-          </Link>
+          <>
+            <Link to="/">
+              <MenuItem icon={<FaTachometerAlt />}>Dashboard</MenuItem>
+            </Link>
+          </>
           <SubMenu title="Users" icon={<FiUsers />}>
             <>
               <Link to="/users">

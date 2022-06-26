@@ -1,0 +1,93 @@
+.app-container{
+    $sidebar-color: rgb(255, 250, 250);
+
+    background:#021328 ;
+    color:#fff;
+    .table{
+        background:#021328 ;
+        color:#fff;
+    }
+    .widget,.progress-container,.chart-container,.table-container ,.datatable-container,.form-title-container, .form-container  {
+        background: rgba(255, 255, 255, 0.089);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        input{
+            background:transparent !important;
+            color: rgba(255, 255, 255, 0.76) !important;
+        }
+    }
+    .navbar-container{
+        background: rgba(255, 255, 255, 0.144);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
+    color:#fff;
+    .single-icon{
+        color:#fff;
+    }
+    
+}
+.pro-sidebar > .pro-sidebar-inner{
+    background: rgba(255, 255, 255, 0.144);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color:   rgba(214, 214, 214, 0.788);
+    .pro-inner-item,pro-item-content,.pro-menu-item{
+        &:hover{
+            color: #fff !important;
+                                      
+             
+        }
+    }
+   
+}
+    .tableCell{
+        color: rgba(255, 255, 255, 0.76) !important;
+    }
+    .cellWithStatus {
+        .status{
+            padding: 5px;
+            border-radius: 5px;
+            text-transform: capitalize;
+            &.active{
+                color: rgb(214, 214, 214);
+            }&.pending{
+                color: rgb(214, 214, 214);
+            }&.passive{
+                color: rgb(214, 214, 214);
+            }
+        }
+    }
+    .cellWithAction{
+        display: flex;
+        align-items: center;
+        gap:10px;
+        .view{
+            display: block;
+            border-radius: 5px;
+            color: rgb(214, 214, 214);
+            padding: 5px;
+            cursor: pointer;
+        } .delete{
+            cursor: pointer;
+            display: block;
+            border-radius: 5px;
+            color: rgb(214, 214, 214);
+            padding: 5px;
+        }
+    
+    }
+    .MuiTablePagination-displayedRows,.MuiTablePagination-actions ,.pro-sidebar .pro-menu a{
+        color: rgb(214, 214, 214);
+        &:hover{
+            color:#fff;
+        }
+    }
+
+}
